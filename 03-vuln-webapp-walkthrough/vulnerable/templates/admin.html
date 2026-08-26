@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}Admin{% endblock %}
+{% block body %}
+<div class="card">
+  <h2>Staff directory (admin)</h2>
+  <p>This roster is the sensitive view the access-control bug is meant to protect.</p>
+  <table>
+    <thead><tr><th>Username</th><th>Role</th></tr></thead>
+    <tbody>
+      {% for user in users %}
+      <tr><td>{{ user.username }}</td><td>{{ user.role }}</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

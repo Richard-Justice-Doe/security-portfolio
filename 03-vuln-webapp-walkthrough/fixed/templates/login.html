@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Login{% endblock %}
+{% block body %}
+<div class="card">
+  <h2>Staff login</h2>
+  <p>Lab accounts: <code>kofi.staff</code> / <code>lab-only</code> (staff) and <code>ama.admin</code> / <code>lab-only-admin</code> (admin).</p>
+  {% if error %}<p class="error">{{ error }}</p>{% endif %}
+  <form method="post">
+    <p><label>Username<br><input name="username" autocomplete="username"></label></p>
+    <p><label>Password<br><input name="password" type="password" autocomplete="current-password"></label></p>
+    <p><button type="submit">Sign in</button></p>
+  </form>
+</div>
+{% endblock %}

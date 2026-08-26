@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Risk {{ report.score }} · {{ report.band }}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="top">
+    <p class="eyebrow"><a href="{{ url_for('index') }}">← New analysis</a></p>
+    <h1>Analysis results</h1>
+    {% if demo_name %}<p class="lede">Sample: <code>{{ demo_name }}</code></p>{% endif %}
+  </header>
+
+  <section class="score card band-{{ report.band | lower }}">
+    <div class="meter">
+      <span class="number">{{ report.score }}</span>
+      <span class="over">/ 100</span>
+    </div>
+    <div>
+      <p class="band">{{ report.band }} risk</p>
+      <p>{{ report.summary }}</p>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Extracted headers</h2>
+    <table class="kv">
+      <tr><th>Subject</th><td>{{ report.subject or "—" }}</td></tr>
+      <tr><th>From (name)</th><td>{{ report.from_display or "—" }}</td></tr>
+      <tr><th>From (address)</th><td>{{ report.from_address or "—" }}</td></tr>
+      <tr><th>From domain</th><td>{{ report.from_domain or "—" }}</td></tr>
+      <tr><th>Reply-To</th><td>{{ report.reply_to or "—" }}</td></tr>
+      <tr><th>Return-Path</th><td>{{ report.return_path or "—" }}</td></tr>
+      <tr><th>SPF</th><td><span class="pill {{ report.spf }}">{{ report.spf }}</span></td></tr>
+      <tr><th>DKIM</th><td><span class="pill {{ report.dkim }}">{{ report.dkim }}</span></td></tr>
+      <tr><th>DMARC</th><td><span class="pill {{ report.dmarc }}">{{ report.dmarc }}</span></td></tr>
+    </table>
+  </section>
+
+  <section class="card">
+    <h2>Red flags</h2>
+    {% if not report.flags %}
+      <p>No heuristic flags fired. That is not a guarantee the message is safe.</p>
+    {% endif %}
+    {% for flag in report.flags %}
+    <article class="flag {{ flag.severity }}">
+      <h3>{{ flag.title }} <span class="pill {{ flag.severity }}">{{ flag.severity }} · +{{ flag.weight }}</span></h3>
+      <p>{{ flag.explanation }}</p>
+      {% if flag.evidence %}<p class="evidence">{{ flag.evidence }}</p>{% endif %}
+    </article>
+    {% endfor %}
+  </section>
+
+  <section class="card">
+    <h2>Received chain</h2>
+    <p class="hint">Newest hop first (how SMTP actually prepends Received).</p>
+    {% if not report.hops %}
+      <p>No Received headers found.</p>
+    {% else %}
+    <ol class="hops">
+      {% for hop in report.hops %}
+      <li>
+        <strong>{{ hop.from_host or "unknown from" }}</strong>
+        → {{ hop.by_host or "unknown by" }}
+        {% if hop.ip %}<code>{{ hop.ip }}</code>{% endif %}
+        {% if hop.date %}<span class="muted">{{ hop.date }}</span>{% endif %}
+      </li>
+      {% endfor %}
+    </ol>
+    {% endif %}
+  </section>
+</body>
+</html>

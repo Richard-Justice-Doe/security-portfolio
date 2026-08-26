@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="refresh" content="20">
+  <title>SIEM-lite</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <header>
+    <p class="eyebrow">Local lab · synthetic logs · auto-refresh 20s</p>
+    <h1>SIEM-lite</h1>
+    <p>Normalised auth, firewall, and web events with three detection rules: brute force, blocked/unusual IPs, HTTP error spikes.</p>
+  </header>
+
+  <section class="card">
+    <h2>Alerts</h2>
+    {% if not alerts %}
+      <p>No alerts. Run <code>python ingest.py --reset</code> first.</p>
+    {% else %}
+    <table>
+      <thead><tr><th>Time</th><th>Rule</th><th>Severity</th><th>IP</th><th>Details</th></tr></thead>
+      <tbody>
+        {% for a in alerts %}
+        <tr class="sev-{{ a.severity }}">
+          <td>{{ a.ts }}</td>
+          <td>{{ a.rule }}</td>
+          <td>{{ a.severity }}</td>
+          <td>{{ a.src_ip or "—" }}</td>
+          <td>{{ a.details }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    {% endif %}
+  </section>
+
+  <section class="card">
+    <h2>Event volume</h2>
+    <canvas id="volume" height="90"></canvas>
+  </section>
+
+  <section class="card">
+    <h2>Recent events</h2>
+    <form method="get">
+      <label>Source
+        <select name="source" onchange="this.form.submit()">
+          <option value="" {% if not source_filter %}selected{% endif %}>all</option>
+          <option value="auth" {% if source_filter == 'auth' %}selected{% endif %}>auth</option>
+          <option value="firewall" {% if source_filter == 'firewall' %}selected{% endif %}>firewall</option>
+          <option value="web" {% if source_filter == 'web' %}selected{% endif %}>web</option>
+        </select>
+      </label>
+      <label>Severity
+        <select name="severity" onchange="this.form.submit()">
+          <option value="" {% if not severity_filter %}selected{% endif %}>all</option>
+          <option value="info" {% if severity_filter == 'info' %}selected{% endif %}>info</option>
+          <option value="warning" {% if severity_filter == 'warning' %}selected{% endif %}>warning</option>
+          <option value="error" {% if severity_filter == 'error' %}selected{% endif %}>error</option>
+        </select>
+      </label>
+    </form>
+    <table>
+      <thead><tr><th>Time</th><th>Source</th><th>Type</th><th>Severity</th><th>IP</th><th>Raw</th></tr></thead>
+      <tbody>
+        {% for e in events %}
+        <tr>
+          <td>{{ e.ts }}</td>
+          <td>{{ e.source }}</td>
+          <td>{{ e.event_type }}</td>
+          <td>{{ e.severity }}</td>
+          <td>{{ e.src_ip or "—" }}</td>
+          <td class="raw">{{ e.raw_message }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+
+  <script>
+    const hours = {{ hours | tojson }};
+    const series = {{ series | tojson }};
+    const colors = { auth: "#3d8bfd", firewall: "#e7c65c", web: "#3dd68c" };
+    const datasets = Object.entries(series).map(([name, data]) => ({
+      label: name,
+      data,
+      borderColor: colors[name] || "#ccc",
+      backgroundColor: colors[name] || "#ccc",
+      tension: 0.2,
+    }));
+    new Chart(document.getElementById("volume"), {
+      type: "line",
+      data: { labels: hours, datasets },
+      options: {
+        plugins: { legend: { labels: { color: "#c9d4e0" } } },
+        scales: {
+          x: { ticks: { color: "#93a4b8" }, grid: { color: "#243140" } },
+          y: { ticks: { color: "#93a4b8" }, grid: { color: "#243140" } },
+        },
+      },
+    });
+  </script>
+</body>
+</html>

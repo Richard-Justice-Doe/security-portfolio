@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Runtime artifacts (regenerate locally)
+**/*.db
+**/logs/*.log
+**/logs/*.jsonl
+**/*.png
+!**/samples/**
+.pytest_cache/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

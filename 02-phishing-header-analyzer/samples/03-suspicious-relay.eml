@@ -1,0 +1,26 @@
+MIME-Version: 1.0
+Date: Wed, 26 Aug 2026 11:40:00 +0000
+Message-ID: <geo-jump-003@mail.ru-relay.example>
+Subject: MTN MoMo: unusual login from a new device
+From: MTN Support <alerts@mtn.com.gh>
+To: customer@example.test
+Reply-To: alerts@mtn.com.gh
+Return-Path: <alerts@mtn.com.gh>
+Authentication-Results: mx.example.test;
+	spf=none;
+	dkim=none;
+	dmarc=none
+Received: from mx-accra.example.test (mx-accra.example.test [192.0.2.80])
+	by inbox.example.test with ESMTPS id last
+	for <customer@example.test>; Wed, 26 Aug 2026 11:40:00 +0000
+Received: from vps-moscow.evil-relay.ru (vps-moscow.evil-relay.ru [203.0.113.90])
+	by mx-accra.example.test with ESMTP id mid
+	for <customer@example.test>; Wed, 26 Aug 2026 11:39:58 +0000
+Received: from webmail.mtn.com.gh (webmail.mtn.com.gh [198.51.100.20])
+	by vps-moscow.evil-relay.ru with ESMTP id first
+	for <customer@example.test>; Wed, 26 Aug 2026 11:39:50 +0000
+Content-Type: text/plain; charset="UTF-8"
+
+This synthetic sample looks like it came from MTN Ghana, but the
+Received chain jumps through a .ru VPS between two .gh hosts — a
+geographic hop that is hard to justify for a domestic operator.

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Phishing Header Analyzer</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="top">
+    <p class="eyebrow">Portfolio lab · header-only · no network calls</p>
+    <h1>Phishing / Email Header Analyzer</h1>
+    <p class="lede">Paste raw headers or upload a <code>.eml</code> file. The tool scores SPF/DKIM/DMARC, Reply-To mismatches, display-name spoofing, and Received-chain jumps.</p>
+  </header>
+
+  {% if error %}
+  <p class="banner error">{{ error }}</p>
+  {% endif %}
+
+  <main class="grid">
+    <form class="card" action="{{ url_for('analyze') }}" method="post" enctype="multipart/form-data">
+      <label for="headers">Raw headers or full message</label>
+      <textarea id="headers" name="headers" rows="16" placeholder="From: ...&#10;Return-Path: ...&#10;Authentication-Results: ...&#10;Received: ..."></textarea>
+      <label for="eml">Or upload a .eml file</label>
+      <input id="eml" type="file" name="eml" accept=".eml,.txt,message/rfc822">
+      <button type="submit">Analyze headers</button>
+    </form>
+
+    <aside class="card">
+      <h2>Bundled samples</h2>
+      <p>Synthetic messages for the demo. None contain real personal data.</p>
+      <ul class="samples">
+        {% for sample in samples %}
+        <li>
+          <a href="{{ url_for('demo', name=sample.name) }}">{{ sample.name }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+      <p class="hint">01 is a clean invoice. 02 is an obvious bank spoof. 03 has a geographically implausible Received chain.</p>
+    </aside>
+  </main>
+</body>
+</html>

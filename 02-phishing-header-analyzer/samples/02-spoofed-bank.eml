@@ -1,0 +1,27 @@
+MIME-Version: 1.0
+Date: Wed, 26 Aug 2026 10:12:44 +0000
+Message-ID: <spoof-gcb-009@mailer.unrelated-host.xyz>
+Subject: URGENT: Confirm your GCB Mobile Money PIN
+From: "Ghana Commercial Bank Security" <secure-alert@gmail.com>
+To: victim@example.test
+Reply-To: gcb-verify@attacker-mailbox.xyz
+Return-Path: <bounce@attacker-mailbox.xyz>
+Authentication-Results: mx.google.com;
+	dkim=fail header.d=attacker-mailbox.xyz header.s=default;
+	spf=fail (google.com: domain of bounce@attacker-mailbox.xyz does not designate 203.0.113.44 as permitted sender) smtp.mailfrom=bounce@attacker-mailbox.xyz;
+	dmarc=fail (p=NONE dis=NONE) header.from=gmail.com
+Received: from unknown (unknown [203.0.113.44])
+	by mx.google.com with ESMTP id phish01
+	for <victim@example.test>; Wed, 26 Aug 2026 10:12:44 +0000
+Received: from relay.attacker-mailbox.xyz (relay.attacker-mailbox.xyz [203.0.113.44])
+	by outbound.attacker-mailbox.xyz with ESMTP id phish00
+	for <victim@example.test>; Wed, 26 Aug 2026 10:12:40 +0000
+Content-Type: text/plain; charset="UTF-8"
+
+Dear Customer,
+
+Your GCB account will be frozen in 30 minutes unless you confirm your
+Mobile Money PIN at the link we sent. This is a synthetic phishing
+sample for a security lab — do not treat it as a real bank message.
+
+— "GCB Security" (spoofed)

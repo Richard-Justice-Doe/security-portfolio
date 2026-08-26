@@ -1,0 +1,18 @@
+# Synthetic campus SSH log — no real hosts or users.
+Aug 26 03:11:08 campus-gw sshd[1102]: Accepted password for kofi from 192.168.1.40 port 53101 ssh2
+Aug 26 03:44:19 campus-gw sudo: kofi : TTY=pts/0 ; PWD=/home/kofi ; USER=root ; COMMAND=/usr/bin/apt update
+Aug 26 04:12:01 campus-gw sshd[1420]: Failed password for invalid user admin from 203.0.113.88 port 44112 ssh2
+Aug 26 04:12:04 campus-gw sshd[1421]: Failed password for invalid user admin from 203.0.113.88 port 44113 ssh2
+Aug 26 04:12:07 campus-gw sshd[1422]: Failed password for invalid user root from 203.0.113.88 port 44114 ssh2
+Aug 26 04:12:11 campus-gw sshd[1423]: Failed password for invalid user ubuntu from 203.0.113.88 port 44115 ssh2
+Aug 26 04:12:15 campus-gw sshd[1424]: Failed password for invalid user admin from 203.0.113.88 port 44116 ssh2
+Aug 26 04:12:19 campus-gw sshd[1425]: Failed password for invalid user oracle from 203.0.113.88 port 44117 ssh2
+Aug 26 04:12:24 campus-gw sshd[1426]: Failed password for invalid user test from 203.0.113.88 port 44118 ssh2
+Aug 26 04:12:31 campus-gw sshd[1427]: Failed password for invalid user admin from 203.0.113.88 port 44119 ssh2
+Aug 26 07:02:44 campus-gw sshd[1801]: Failed password for kofi from 192.168.1.77 port 50211 ssh2
+Aug 26 07:03:01 campus-gw sshd[1802]: Accepted password for kofi from 192.168.1.77 port 50212 ssh2
+Aug 26 08:15:33 campus-gw sshd[2010]: Accepted password for ama from 10.0.0.15 port 61002 ssh2
+Aug 26 09:40:12 campus-gw sudo: ama : TTY=pts/1 ; PWD=/var/www ; USER=root ; COMMAND=/bin/systemctl reload nginx
+Aug 26 12:01:09 campus-gw sshd[2400]: Failed password for invalid user pi from 198.51.100.44 port 22022 ssh2
+Aug 26 12:01:14 campus-gw sshd[2401]: Failed password for invalid user pi from 198.51.100.44 port 22023 ssh2
+Aug 26 18:22:05 campus-gw sshd[3001]: Accepted password for kofi from 192.168.1.40 port 53390 ssh2

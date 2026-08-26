@@ -1,0 +1,27 @@
+MIME-Version: 1.0
+Date: Wed, 26 Aug 2026 09:00:02 +0000
+Message-ID: <clean-invoice-001@invoices.example.com>
+Subject: Invoice 1042 from Example Logistics
+From: Example Logistics Billing <billing@invoices.example.com>
+To: Ama Mensah <ama@example.test>
+Reply-To: billing@invoices.example.com
+Return-Path: <bounce@invoices.example.com>
+Authentication-Results: mx.google.com;
+	dkim=pass header.d=invoices.example.com header.s=selector1;
+	spf=pass (google.com: domain of bounce@invoices.example.com designates 192.0.2.10 as permitted sender) smtp.mailfrom=bounce@invoices.example.com;
+	dmarc=pass (p=REJECT dis=NONE) header.from=invoices.example.com
+Received: from mail.invoices.example.com (mail.invoices.example.com [192.0.2.10])
+	by mx.google.com with ESMTPS id abc123
+	for <ama@example.test>; Wed, 26 Aug 2026 09:00:01 +0000
+Received: from web.invoices.example.com (web.invoices.example.com [192.0.2.11])
+	by mail.invoices.example.com with ESMTP id xyz789
+	for <ama@example.test>; Wed, 26 Aug 2026 08:59:58 +0000
+Content-Type: text/plain; charset="UTF-8"
+
+Hello Ama,
+
+Please find invoice 1042 attached for this month's freight. Pay via the
+portal linked from your account — we will never ask you to wire funds
+to a personal mobile-money wallet.
+
+— Billing, Example Logistics

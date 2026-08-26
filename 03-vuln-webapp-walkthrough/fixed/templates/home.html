@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block body %}
+<p>Signed in as <strong>{{ role }}</strong>.</p>
+<div class="card">
+  <h2>Unclaimed items</h2>
+  <table>
+    <thead><tr><th>Item</th><th>Last seen</th></tr></thead>
+    <tbody>
+      {% for item in items %}
+      <tr><td>{{ item.title }}</td><td>{{ item.location }}</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

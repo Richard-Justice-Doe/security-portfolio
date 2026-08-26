@@ -1,0 +1,247 @@
+txn_id,timestamp,sender_id,receiver_id,amount_ghs,sender_location,receiver_location,transaction_type,rule_flags,ml_anomaly,flagged,injected_pattern
+TXN-000028,2026-08-01 08:49:26,AIR-00015,MTN-00025,355.63,Accra,Accra,bank_to_wallet,,1,False,none
+TXN-000048,2026-08-01 10:56:01,MTN-00037,TEL-00017,328.28,Takoradi,Tamale,bank_to_wallet,,1,False,none
+TXN-000156,2026-08-01 23:43:08,TEL-00044,MTN-00055,10.55,Takoradi,Sunyani,p2p,,1,False,none
+TXN-000158,2026-08-02 00:04:10,TEL-00068,TEL-00044,38.61,Bolgatanga,Takoradi,cash_in,,1,False,none
+TXN-000160,2026-08-02 00:16:40,TEL-00062,AIR-00060,136.81,Accra,Tamale,bank_to_wallet,,1,False,none
+TXN-000161,2026-08-02 00:25:03,TEL-00026,MERCH-010,263.97,Accra,Accra,merchant,,1,False,none
+TXN-000163,2026-08-02 00:56:39,TEL-00044,MERCH-027,96.75,Takoradi,Takoradi,merchant,,1,False,none
+TXN-000164,2026-08-02 00:59:02,MTN-00055,TEL-00023,110.12,Accra,Koforidua,bank_to_wallet,,1,False,none
+TXN-000170,2026-08-02 01:29:12,TEL-00068,TEL-00029,158.6,Bolgatanga,Ho,cash_in,,1,False,none
+TXN-000172,2026-08-02 01:41:43,AIR-00060,TEL-00074,159.48,Tamale,Wa,cash_in,,1,False,none
+TXN-000187,2026-08-02 03:08:33,AIR-00021,AIR-00036,204.31,Wa,Accra,bank_to_wallet,,1,False,none
+TXN-000272,2026-08-02 13:00:07,TEL-00044,MTN-00040,183.9,Takoradi,Tamale,p2p,velocity,0,True,velocity
+TXN-000273,2026-08-02 13:00:30,TEL-00044,TEL-00065,171.57,Takoradi,Tamale,p2p,velocity,0,True,velocity
+TXN-000274,2026-08-02 13:00:49,TEL-00044,AIR-00051,133.29,Takoradi,Wa,p2p,velocity,0,True,velocity
+TXN-000275,2026-08-02 13:01:43,TEL-00044,MTN-00025,180.19,Takoradi,Accra,p2p,velocity,0,True,velocity
+TXN-000276,2026-08-02 13:02:27,TEL-00044,MTN-00022,118.38,Takoradi,Accra,p2p,velocity,0,True,velocity
+TXN-000277,2026-08-02 13:02:43,TEL-00044,MTN-00007,248.72,Takoradi,Accra,p2p,velocity,0,True,velocity
+TXN-000278,2026-08-02 13:03:09,TEL-00044,MTN-00025,98.85,Takoradi,Accra,p2p,velocity,0,True,velocity
+TXN-000280,2026-08-02 13:03:49,TEL-00044,MTN-00013,131.2,Takoradi,Kumasi,p2p,velocity,0,True,velocity
+TXN-000281,2026-08-02 13:04:47,TEL-00044,TEL-00017,247.17,Takoradi,Tamale,p2p,velocity,0,True,velocity
+TXN-000282,2026-08-02 13:05:19,TEL-00044,AIR-00069,113.89,Takoradi,Kumasi,p2p,velocity,0,True,velocity
+TXN-000283,2026-08-02 13:06:07,TEL-00044,TEL-00020,152.04,Takoradi,Kumasi,p2p,velocity,0,True,velocity
+TXN-000284,2026-08-02 13:06:07,TEL-00044,MTN-00043,184.44,Takoradi,Ho,p2p,velocity,0,True,velocity
+TXN-000285,2026-08-02 13:06:10,TEL-00044,TEL-00020,153.69,Takoradi,Kumasi,p2p,velocity,0,True,velocity
+TXN-000286,2026-08-02 13:07:16,TEL-00044,AIR-00033,160.03,Takoradi,Kumasi,p2p,velocity,0,True,velocity
+TXN-000373,2026-08-02 22:56:03,MTN-00049,AIR-00027,10.51,Kumasi,Accra,p2p,geo_impossible,0,True,geo_impossible
+TXN-000382,2026-08-02 23:07:03,MTN-00049,TEL-00068,22.79,Bolgatanga,Bolgatanga,p2p,geo_impossible,0,True,geo_impossible
+TXN-000384,2026-08-02 23:14:27,TEL-00044,TEL-00002,56.45,Koforidua,Accra,cash_out,,1,False,none
+TXN-000390,2026-08-03 00:45:09,AIR-00069,MERCH-033,10.78,Takoradi,Takoradi,merchant,,1,False,none
+TXN-000397,2026-08-03 01:27:49,TEL-00044,MERCH-028,12.83,Koforidua,Koforidua,merchant,,1,False,none
+TXN-000408,2026-08-03 03:13:48,AIR-00048,AIR-00054,252.96,Koforidua,Cape Coast,bank_to_wallet,,1,False,none
+TXN-000413,2026-08-03 03:49:43,TEL-00077,AIR-00075,115.92,Kumasi,Koforidua,bank_to_wallet,,1,False,none
+TXN-000416,2026-08-03 04:08:05,AIR-00066,MTN-00043,178.56,Kumasi,Ho,bank_to_wallet,,1,False,none
+TXN-000418,2026-08-03 04:13:11,TEL-00008,TEL-00053,199.26,Kumasi,Koforidua,bank_to_wallet,,1,False,none
+TXN-000423,2026-08-03 04:41:11,MTN-00004,AIR-00024,336.6,Accra,Accra,bank_to_wallet,,1,False,none
+TXN-000527,2026-08-03 15:49:06,TEL-00044,TEL-00059,312.09,Takoradi,Cape Coast,bank_to_wallet,,1,False,none
+TXN-000578,2026-08-03 20:58:06,TEL-00068,AIR-00042,291.75,Bolgatanga,Accra,bank_to_wallet,,1,False,none
+TXN-000579,2026-08-03 21:18:59,TEL-00044,MERCH-027,254.95,Takoradi,Takoradi,merchant,,1,False,none
+TXN-000584,2026-08-03 22:23:45,AIR-00075,TEL-00017,198.26,Koforidua,Tamale,bank_to_wallet,,1,False,none
+TXN-000597,2026-08-04 00:08:13,MTN-00064,AIR-00066,216.32,Tamale,Kumasi,bank_to_wallet,,1,False,none
+TXN-000601,2026-08-04 00:30:39,TEL-00047,TEL-00050,137.13,Kumasi,Wa,cash_in,,1,False,none
+TXN-000603,2026-08-04 00:31:35,TEL-00041,MTN-00040,186.46,Kumasi,Tamale,bank_to_wallet,,1,False,none
+TXN-000604,2026-08-04 00:36:16,TEL-00005,AIR-00078,86.81,Kumasi,Accra,bank_to_wallet,,1,False,none
+TXN-000607,2026-08-04 01:44:21,AIR-00012,TEL-00080,48.49,Accra,Cape Coast,bank_to_wallet,,1,False,none
+TXN-000609,2026-08-04 02:17:54,MTN-00016,AIR-00078,15.63,Accra,Takoradi,p2p,,1,False,none
+TXN-000620,2026-08-04 03:26:56,TEL-00005,TEL-00077,129.35,Takoradi,Kumasi,bank_to_wallet,,1,False,none
+TXN-000636,2026-08-04 05:24:13,TEL-00041,AIR-00078,58.4,Accra,Takoradi,p2p,geo_impossible,0,True,geo_impossible
+TXN-000638,2026-08-04 05:28:13,TEL-00041,TEL-00074,42.85,Wa,Wa,p2p,geo_impossible,0,True,geo_impossible
+TXN-000642,2026-08-04 05:34:35,MTN-00016,TEL-00026,171.17,Accra,Accra,bank_to_wallet,,1,False,none
+TXN-000696,2026-08-04 11:49:40,AIR-00066,TEL-00047,17568.33,Kumasi,Kumasi,p2p,amount_spike,0,True,amount_spike
+TXN-000781,2026-08-04 21:48:39,MTN-00064,AIR-00009,12763.79,Tamale,Accra,p2p,amount_spike,1,True,amount_spike
+TXN-000802,2026-08-04 23:36:44,AIR-00057,MTN-00043,295.42,Accra,Ho,bank_to_wallet,,1,False,none
+TXN-000806,2026-08-05 00:04:26,TEL-00023,MTN-00004,116.37,Koforidua,Tamale,cash_in,,1,False,none
+TXN-000807,2026-08-05 00:12:45,AIR-00072,MERCH-035,19.7,Ho,Ho,merchant,,1,False,none
+TXN-000808,2026-08-05 00:16:26,TEL-00023,MTN-00070,108.53,Koforidua,Wa,cash_out,,1,False,none
+TXN-000809,2026-08-05 00:19:10,TEL-00068,MERCH-016,16.43,Bolgatanga,Bolgatanga,merchant,,1,False,none
+TXN-000815,2026-08-05 00:57:11,MTN-00052,TEL-00074,135.87,Accra,Wa,bank_to_wallet,,1,False,none
+TXN-000816,2026-08-05 00:58:09,TEL-00044,MTN-00079,58.37,Takoradi,Ho,cash_in,,1,False,none
+TXN-000825,2026-08-05 02:01:33,TEL-00008,AIR-00003,200.99,Sunyani,Takoradi,bank_to_wallet,,1,False,none
+TXN-000828,2026-08-05 02:12:15,TEL-00080,AIR-00021,198.2,Kumasi,Wa,bank_to_wallet,,1,False,none
+TXN-000829,2026-08-05 02:16:10,TEL-00023,MTN-00040,47.35,Koforidua,Tamale,cash_in,,1,False,none
+TXN-000830,2026-08-05 02:17:33,MTN-00001,AIR-00024,83.48,Accra,Accra,bank_to_wallet,,1,False,none
+TXN-000835,2026-08-05 03:21:39,TEL-00044,MTN-00019,111.86,Takoradi,Wa,cash_out,,1,False,none
+TXN-000838,2026-08-05 03:41:58,TEL-00047,TEL-00041,37.55,Kumasi,Kumasi,p2p,geo_impossible,0,True,geo_impossible
+TXN-000839,2026-08-05 03:53:58,TEL-00047,TEL-00071,23.14,Bolgatanga,Bolgatanga,p2p,geo_impossible,0,True,geo_impossible
+TXN-000840,2026-08-05 04:09:31,MTN-00058,MTN-00037,292.44,Takoradi,Takoradi,bank_to_wallet,,1,False,none
+TXN-000841,2026-08-05 04:14:43,MTN-00019,TEL-00047,8609.39,Tamale,Kumasi,p2p,geo_impossible|amount_spike,1,True,amount_spike
+TXN-000845,2026-08-05 04:31:14,AIR-00072,AIR-00012,211.1,Takoradi,Accra,bank_to_wallet,,1,False,none
+TXN-000846,2026-08-05 04:41:40,MTN-00016,TEL-00065,63.42,Accra,Tamale,cash_in,,1,False,none
+TXN-000847,2026-08-05 04:42:33,MTN-00019,MTN-00079,21.24,Sunyani,Cape Coast,cash_out,geo_impossible,0,True,none
+TXN-000848,2026-08-05 04:45:06,AIR-00072,MTN-00004,160.44,Takoradi,Accra,bank_to_wallet,,1,False,none
+TXN-000883,2026-08-05 09:12:03,AIR-00039,AIR-00063,24.69,Accra,Takoradi,p2p,geo_impossible,0,True,geo_impossible
+TXN-000885,2026-08-05 09:20:03,AIR-00039,MTN-00049,106.5,Wa,Wa,p2p,geo_impossible,0,True,geo_impossible
+TXN-000973,2026-08-05 19:34:09,MTN-00001,MTN-00070,10416.61,Accra,Takoradi,p2p,amount_spike,1,True,amount_spike
+TXN-001006,2026-08-06 01:07:45,MTN-00016,MTN-00076,106.45,Accra,Bolgatanga,p2p,,1,False,none
+TXN-001010,2026-08-06 01:16:23,TEL-00008,AIR-00009,274.91,Accra,Accra,bank_to_wallet,,1,False,none
+TXN-001024,2026-08-06 02:23:13,TEL-00023,MERCH-011,11.54,Koforidua,Koforidua,merchant,,1,False,none
+TXN-001027,2026-08-06 02:39:22,AIR-00051,MTN-00025,91.06,Cape Coast,Accra,cash_in,,1,False,none
+TXN-001042,2026-08-06 04:21:15,MTN-00040,AIR-00030,163.91,Tamale,Ho,bank_to_wallet,,1,False,none
+TXN-001053,2026-08-06 05:58:30,AIR-00060,MTN-00061,28.97,Accra,Koforidua,p2p,geo_impossible,0,True,geo_impossible
+TXN-001054,2026-08-06 06:02:30,AIR-00060,MTN-00070,60.93,Tamale,Tamale,p2p,geo_impossible,0,True,geo_impossible
+TXN-001100,2026-08-06 11:04:19,MTN-00037,MTN-00028,383.98,Takoradi,Ho,bank_to_wallet,,1,False,none
+TXN-001102,2026-08-06 11:06:35,AIR-00060,TEL-00035,126.76,Kumasi,Accra,p2p,geo_impossible,0,True,geo_impossible
+TXN-001106,2026-08-06 11:11:35,AIR-00060,AIR-00012,79.92,Bolgatanga,Bolgatanga,p2p,geo_impossible,0,True,geo_impossible
+TXN-001117,2026-08-06 12:16:50,MTN-00079,MTN-00034,9335.01,Accra,Accra,p2p,amount_spike,1,True,amount_spike
+TXN-001125,2026-08-06 12:52:49,TEL-00068,MTN-00001,243.28,Bolgatanga,Accra,p2p,velocity,0,True,velocity
+TXN-001126,2026-08-06 12:53:15,TEL-00068,AIR-00042,142.17,Bolgatanga,Accra,p2p,velocity,0,True,velocity
+TXN-001127,2026-08-06 12:53:31,TEL-00068,MTN-00046,203.95,Bolgatanga,Tamale,p2p,velocity,0,True,velocity
+TXN-001128,2026-08-06 12:53:58,TEL-00068,TEL-00077,229.03,Bolgatanga,Kumasi,p2p,velocity,0,True,velocity
+TXN-001129,2026-08-06 12:54:44,TEL-00068,TEL-00029,223.5,Bolgatanga,Accra,p2p,velocity,0,True,velocity
+TXN-001130,2026-08-06 12:55:41,TEL-00068,TEL-00041,233.89,Bolgatanga,Kumasi,p2p,velocity,0,True,velocity
+TXN-001131,2026-08-06 12:55:49,TEL-00068,TEL-00056,94.84,Bolgatanga,Kumasi,p2p,velocity,0,True,velocity
+TXN-001132,2026-08-06 12:56:19,TEL-00068,TEL-00011,135.91,Bolgatanga,Accra,p2p,velocity,0,True,velocity
+TXN-001133,2026-08-06 12:57:01,TEL-00068,AIR-00075,214.23,Bolgatanga,Koforidua,p2p,velocity,0,True,velocity
+TXN-001134,2026-08-06 12:57:19,TEL-00068,TEL-00011,173.46,Bolgatanga,Accra,p2p,velocity,0,True,velocity
+TXN-001135,2026-08-06 12:57:21,TEL-00068,MTN-00058,121.05,Bolgatanga,Takoradi,p2p,velocity,0,True,velocity
+TXN-001136,2026-08-06 12:58:27,TEL-00068,TEL-00047,200.36,Bolgatanga,Kumasi,p2p,velocity,0,True,velocity
+TXN-001137,2026-08-06 12:59:25,TEL-00068,AIR-00018,87.23,Bolgatanga,Bolgatanga,p2p,velocity,0,True,velocity
+TXN-001139,2026-08-06 13:00:49,TEL-00068,MTN-00079,82.12,Bolgatanga,Accra,p2p,velocity,0,True,velocity
+TXN-001192,2026-08-06 19:31:02,AIR-00039,MTN-00010,10479.09,Accra,Kumasi,p2p,amount_spike,1,True,amount_spike
+TXN-001216,2026-08-06 22:45:25,MTN-00076,AIR-00048,106.71,Accra,Koforidua,p2p,velocity,0,True,velocity
+TXN-001217,2026-08-06 22:45:48,MTN-00076,AIR-00078,141.57,Accra,Takoradi,p2p,velocity,0,True,velocity
+TXN-001218,2026-08-06 22:46:29,MTN-00076,MTN-00046,84.72,Accra,Tamale,p2p,velocity,0,True,velocity
+TXN-001219,2026-08-06 22:46:43,MTN-00076,TEL-00029,229.2,Accra,Accra,p2p,velocity,0,True,velocity
+TXN-001220,2026-08-06 22:47:49,MTN-00076,AIR-00012,128.72,Accra,Accra,p2p,velocity,0,True,velocity
+TXN-001221,2026-08-06 22:48:05,MTN-00076,TEL-00011,134.77,Accra,Accra,p2p,velocity,0,True,velocity
+TXN-001222,2026-08-06 22:48:25,MTN-00076,AIR-00033,247.85,Accra,Kumasi,p2p,velocity,0,True,velocity
+TXN-001223,2026-08-06 22:48:34,MTN-00076,AIR-00060,149.49,Accra,Tamale,p2p,velocity,0,True,velocity
+TXN-001224,2026-08-06 22:49:45,MTN-00076,AIR-00006,170.47,Accra,Accra,p2p,velocity,0,True,velocity
+TXN-001225,2026-08-06 22:50:13,MTN-00076,MTN-00043,200.63,Accra,Ho,p2p,velocity,0,True,velocity
+TXN-001226,2026-08-06 22:51:34,MTN-00076,MTN-00067,92.99,Accra,Koforidua,p2p,velocity,0,True,velocity
+TXN-001238,2026-08-07 00:12:01,MTN-00025,MTN-00043,179.4,Accra,Accra,cash_in,,1,False,none
+TXN-001244,2026-08-07 01:11:45,TEL-00044,TEL-00023,12.43,Takoradi,Koforidua,p2p,,1,False,none
+TXN-001277,2026-08-07 04:40:41,TEL-00059,MTN-00019,194.39,Cape Coast,Kumasi,bank_to_wallet,,1,False,none
+TXN-001367,2026-08-07 15:30:46,TEL-00044,TEL-00020,222.61,Cape Coast,Kumasi,bank_to_wallet,,1,False,none
+TXN-001392,2026-08-07 18:33:17,MTN-00049,TEL-00035,87.23,Cape Coast,Accra,p2p,velocity,0,True,velocity
+TXN-001393,2026-08-07 18:33:44,MTN-00049,MTN-00067,221.89,Cape Coast,Koforidua,p2p,velocity,0,True,velocity
+TXN-001394,2026-08-07 18:34:07,MTN-00049,TEL-00044,87.58,Cape Coast,Takoradi,p2p,velocity,0,True,velocity
+TXN-001396,2026-08-07 18:35:05,MTN-00049,TEL-00011,140.68,Cape Coast,Accra,p2p,velocity,0,True,velocity
+TXN-001397,2026-08-07 18:35:09,MTN-00049,TEL-00023,92.73,Cape Coast,Koforidua,p2p,velocity,0,True,velocity
+TXN-001398,2026-08-07 18:35:17,MTN-00049,TEL-00041,153.2,Cape Coast,Kumasi,p2p,velocity,0,True,velocity
+TXN-001399,2026-08-07 18:36:05,MTN-00049,AIR-00021,222.7,Cape Coast,Wa,p2p,velocity,0,True,velocity
+TXN-001400,2026-08-07 18:36:27,MTN-00049,AIR-00033,174.34,Cape Coast,Kumasi,p2p,velocity,0,True,velocity
+TXN-001401,2026-08-07 18:37:22,MTN-00049,MTN-00037,213.68,Cape Coast,Takoradi,p2p,velocity,0,True,velocity
+TXN-001402,2026-08-07 18:37:57,MTN-00049,AIR-00066,235.57,Cape Coast,Kumasi,p2p,velocity,0,True,velocity
+TXN-001403,2026-08-07 18:38:50,MTN-00049,MTN-00004,168.41,Cape Coast,Accra,p2p,velocity,0,True,velocity
+TXN-001404,2026-08-07 18:39:20,MTN-00049,MTN-00049,191.81,Cape Coast,Cape Coast,p2p,velocity,0,True,velocity
+TXN-001405,2026-08-07 18:41:17,MTN-00049,AIR-00066,216.36,Cape Coast,Kumasi,p2p,velocity,0,True,velocity
+TXN-001406,2026-08-07 18:42:49,MTN-00049,MTN-00067,241.26,Cape Coast,Koforidua,p2p,velocity,0,True,velocity
+TXN-001465,2026-08-08 00:10:23,TEL-00068,TEL-00026,178.86,Bolgatanga,Accra,bank_to_wallet,,1,False,none
+TXN-001466,2026-08-08 00:12:07,AIR-00021,AIR-00033,69.91,Wa,Kumasi,cash_out,,1,False,none
+TXN-001478,2026-08-08 01:52:36,AIR-00060,MTN-00007,158.1,Tamale,Accra,bank_to_wallet,,1,False,none
+TXN-001487,2026-08-08 03:51:24,MTN-00025,AIR-00075,258.15,Ho,Koforidua,bank_to_wallet,,1,False,none
+TXN-001489,2026-08-08 04:07:22,AIR-00072,AIR-00021,83.41,Takoradi,Wa,cash_in,,1,False,none
+TXN-001490,2026-08-08 04:10:44,TEL-00074,TEL-00041,36.88,Takoradi,Kumasi,p2p,geo_impossible,0,True,geo_impossible
+TXN-001491,2026-08-08 04:21:44,TEL-00074,TEL-00020,30.91,Tamale,Tamale,p2p,geo_impossible,0,True,geo_impossible
+TXN-001493,2026-08-08 04:29:27,AIR-00069,MTN-00028,395.85,Kumasi,Ho,bank_to_wallet,,1,False,none
+TXN-001494,2026-08-08 04:30:23,AIR-00078,AIR-00033,103.4,Wa,Kumasi,bank_to_wallet,,1,False,none
+TXN-001504,2026-08-08 04:57:40,AIR-00078,TEL-00062,277.18,Wa,Accra,bank_to_wallet,,1,False,none
+TXN-001560,2026-08-08 11:50:54,MTN-00016,MTN-00058,343.52,Accra,Takoradi,cash_in,,1,False,none
+TXN-001677,2026-08-08 23:27:00,MTN-00016,MERCH-011,8.4,Accra,Accra,merchant,,1,False,none
+TXN-001683,2026-08-09 00:00:18,TEL-00026,AIR-00030,177.72,Accra,Tamale,cash_out,,1,False,none
+TXN-001695,2026-08-09 01:02:58,TEL-00047,TEL-00059,228.07,Kumasi,Cape Coast,bank_to_wallet,,1,False,none
+TXN-001697,2026-08-09 01:30:15,MTN-00055,MTN-00016,268.27,Accra,Accra,bank_to_wallet,,1,False,none
+TXN-001703,2026-08-09 01:58:42,MTN-00004,MTN-00007,15980.22,Accra,Accra,p2p,amount_spike,1,True,amount_spike
+TXN-001712,2026-08-09 03:05:40,MTN-00010,MTN-00040,58.11,Accra,Tamale,p2p,geo_impossible,0,True,geo_impossible
+TXN-001715,2026-08-09 03:14:40,MTN-00010,AIR-00057,82.45,Wa,Wa,p2p,geo_impossible,0,True,geo_impossible
+TXN-001722,2026-08-09 03:46:40,TEL-00038,MTN-00019,10777.39,Kumasi,Tamale,p2p,amount_spike,1,True,amount_spike
+TXN-001725,2026-08-09 03:58:19,AIR-00072,MERCH-013,4.19,Takoradi,Takoradi,merchant,,1,False,none
+TXN-001728,2026-08-09 04:28:27,AIR-00051,MTN-00019,138.29,Wa,Tamale,cash_out,,1,False,none
+TXN-001732,2026-08-09 04:34:28,TEL-00077,TEL-00011,65.79,Kumasi,Tamale,bank_to_wallet,,1,False,none
+TXN-001733,2026-08-09 04:48:16,TEL-00068,AIR-00054,8.63,Bolgatanga,Accra,p2p,,1,False,none
+TXN-001734,2026-08-09 04:56:12,AIR-00030,AIR-00036,75.05,Tamale,Accra,bank_to_wallet,,1,False,none
+TXN-001826,2026-08-09 15:00:04,AIR-00078,MTN-00073,9767.45,Takoradi,Takoradi,p2p,amount_spike,1,True,amount_spike
+TXN-001854,2026-08-09 18:28:33,MTN-00016,AIR-00066,19.04,Accra,Kumasi,cash_in,,1,False,none
+TXN-001896,2026-08-10 00:30:14,TEL-00005,AIR-00039,218.73,Kumasi,Accra,bank_to_wallet,,1,False,none
+TXN-001899,2026-08-10 01:08:59,MTN-00037,TEL-00005,184.16,Takoradi,Ho,bank_to_wallet,,1,False,none
+TXN-001900,2026-08-10 01:14:33,AIR-00024,TEL-00026,203.06,Accra,Accra,bank_to_wallet,,1,False,none
+TXN-001905,2026-08-10 01:36:42,TEL-00014,AIR-00033,205.35,Koforidua,Kumasi,bank_to_wallet,,1,False,none
+TXN-001918,2026-08-10 03:28:55,TEL-00062,MTN-00064,28.21,Kumasi,Tamale,p2p,geo_impossible,0,True,geo_impossible
+TXN-001922,2026-08-10 03:39:55,TEL-00062,MTN-00058,83.05,Bolgatanga,Bolgatanga,p2p,geo_impossible,0,True,geo_impossible
+TXN-001925,2026-08-10 03:52:24,MTN-00037,AIR-00036,27.05,Cape Coast,Cape Coast,cash_out,,1,False,none
+TXN-001928,2026-08-10 04:05:33,AIR-00036,MERCH-012,105.92,Accra,Accra,merchant,,1,False,none
+TXN-001931,2026-08-10 04:35:56,TEL-00029,AIR-00006,137.39,Accra,Accra,bank_to_wallet,,1,False,none
+TXN-001951,2026-08-10 07:20:56,TEL-00044,MTN-00058,215.61,Wa,Ho,bank_to_wallet,,1,False,none
+TXN-001990,2026-08-10 13:06:59,TEL-00056,AIR-00063,12363.58,Kumasi,Takoradi,p2p,amount_spike,0,True,amount_spike
+TXN-001996,2026-08-10 13:18:56,MTN-00016,AIR-00060,201.21,Accra,Tamale,p2p,velocity,0,True,velocity
+TXN-001997,2026-08-10 13:19:32,MTN-00016,AIR-00036,191.81,Accra,Accra,p2p,velocity,0,True,velocity
+TXN-001998,2026-08-10 13:20:26,MTN-00016,MTN-00052,130.29,Accra,Accra,p2p,velocity,0,True,velocity
+TXN-001999,2026-08-10 13:20:26,MTN-00016,AIR-00027,133.41,Accra,Accra,p2p,velocity,0,True,velocity
+TXN-002000,2026-08-10 13:21:04,MTN-00016,TEL-00020,160.55,Accra,Kumasi,p2p,velocity,0,True,velocity
+TXN-002002,2026-08-10 13:22:08,MTN-00016,MTN-00007,196.7,Accra,Accra,p2p,velocity,0,True,velocity
+TXN-002003,2026-08-10 13:22:21,MTN-00016,TEL-00008,105.52,Accra,Kumasi,p2p,velocity,0,True,velocity
+TXN-002004,2026-08-10 13:22:40,MTN-00016,MTN-00061,147.5,Accra,Koforidua,p2p,velocity,0,True,velocity
+TXN-002005,2026-08-10 13:22:56,MTN-00016,AIR-00042,241.98,Accra,Accra,p2p,velocity,0,True,velocity
+TXN-002006,2026-08-10 13:24:36,MTN-00016,AIR-00048,207.61,Accra,Koforidua,p2p,velocity,0,True,velocity
+TXN-002007,2026-08-10 13:24:56,MTN-00016,MTN-00001,181.41,Accra,Accra,p2p,velocity,0,True,velocity
+TXN-002009,2026-08-10 13:25:21,MTN-00016,MTN-00004,84.99,Accra,Accra,p2p,velocity,0,True,velocity
+TXN-002021,2026-08-10 14:15:10,MTN-00055,AIR-00063,8370.41,Accra,Takoradi,p2p,amount_spike,0,True,amount_spike
+TXN-002059,2026-08-10 17:55:29,TEL-00032,AIR-00072,315.28,Accra,Takoradi,bank_to_wallet,,1,False,none
+TXN-002078,2026-08-10 20:58:24,AIR-00039,TEL-00002,110.57,Accra,Accra,p2p,geo_impossible,0,True,geo_impossible
+TXN-002080,2026-08-10 21:09:24,AIR-00039,AIR-00063,370.95,Tamale,Tamale,p2p,geo_impossible,0,True,geo_impossible
+TXN-002132,2026-08-11 03:57:33,TEL-00071,AIR-00012,88.11,Accra,Accra,p2p,velocity,0,True,velocity
+TXN-002133,2026-08-11 03:58:03,TEL-00071,AIR-00048,191.31,Accra,Koforidua,p2p,velocity,0,True,velocity
+TXN-002134,2026-08-11 03:58:17,TEL-00071,TEL-00080,152.59,Accra,Kumasi,p2p,velocity,0,True,velocity
+TXN-002135,2026-08-11 03:59:28,TEL-00071,AIR-00036,192.04,Accra,Accra,p2p,velocity,0,True,velocity
+TXN-002136,2026-08-11 03:59:33,TEL-00071,MTN-00043,128.62,Accra,Ho,p2p,velocity,0,True,velocity
+TXN-002137,2026-08-11 03:59:39,TEL-00071,AIR-00036,224.42,Accra,Accra,p2p,velocity,0,True,velocity
+TXN-002139,2026-08-11 04:00:09,TEL-00071,TEL-00062,189.64,Accra,Accra,p2p,velocity,0,True,velocity
+TXN-002140,2026-08-11 04:00:21,TEL-00071,AIR-00045,111.58,Accra,Accra,p2p,velocity,0,True,velocity
+TXN-002141,2026-08-11 04:01:38,TEL-00071,AIR-00069,194.55,Accra,Kumasi,p2p,velocity,0,True,velocity
+TXN-002145,2026-08-11 04:18:39,TEL-00011,MERCH-002,248.5,Accra,Accra,merchant,,1,False,none
+TXN-002196,2026-08-11 09:22:30,AIR-00039,MTN-00007,473.17,Accra,Accra,bank_to_wallet,,1,False,none
+TXN-002258,2026-08-11 17:12:20,AIR-00051,AIR-00030,437.61,Ho,Tamale,bank_to_wallet,,1,False,none
+TXN-002294,2026-08-11 21:06:06,AIR-00063,AIR-00006,32.93,Accra,Accra,p2p,geo_impossible,0,True,geo_impossible
+TXN-002295,2026-08-11 21:15:06,AIR-00063,MTN-00010,50.45,Wa,Wa,p2p,geo_impossible,0,True,geo_impossible
+TXN-002299,2026-08-11 22:02:50,MTN-00037,AIR-00030,259.49,Takoradi,Tamale,bank_to_wallet,,1,False,none
+TXN-002305,2026-08-11 23:29:05,MTN-00031,TEL-00023,99.47,Tamale,Koforidua,bank_to_wallet,,1,False,none
+TXN-002306,2026-08-11 23:29:28,MTN-00016,TEL-00026,33.03,Accra,Accra,cash_in,,1,False,none
+TXN-002313,2026-08-12 00:18:48,AIR-00078,TEL-00074,291.28,Takoradi,Wa,bank_to_wallet,,1,False,none
+TXN-002316,2026-08-12 00:43:41,MTN-00058,TEL-00035,363.72,Takoradi,Accra,bank_to_wallet,,1,False,none
+TXN-002371,2026-08-12 08:48:19,MTN-00034,AIR-00057,9799.78,Accra,Accra,p2p,amount_spike,1,True,amount_spike
+TXN-002384,2026-08-12 10:32:44,AIR-00015,MTN-00022,186.91,Accra,Accra,p2p,velocity,0,True,velocity
+TXN-002386,2026-08-12 10:33:26,AIR-00015,AIR-00003,186.26,Accra,Takoradi,p2p,velocity,0,True,velocity
+TXN-002387,2026-08-12 10:34:04,AIR-00015,AIR-00027,248.76,Accra,Accra,p2p,velocity,0,True,velocity
+TXN-002388,2026-08-12 10:34:52,AIR-00015,MTN-00055,198.14,Accra,Accra,p2p,velocity,0,True,velocity
+TXN-002389,2026-08-12 10:34:56,AIR-00015,TEL-00074,236.45,Accra,Wa,p2p,velocity,0,True,velocity
+TXN-002390,2026-08-12 10:35:04,AIR-00015,TEL-00023,133.29,Accra,Koforidua,p2p,velocity,0,True,velocity
+TXN-002391,2026-08-12 10:35:18,AIR-00015,MTN-00073,172.17,Accra,Takoradi,p2p,velocity,0,True,velocity
+TXN-002392,2026-08-12 10:36:08,AIR-00015,MTN-00073,109.48,Accra,Takoradi,p2p,velocity,0,True,velocity
+TXN-002393,2026-08-12 10:37:05,AIR-00015,MTN-00004,108.34,Accra,Accra,p2p,velocity,0,True,velocity
+TXN-002394,2026-08-12 10:37:52,AIR-00015,MTN-00055,184.7,Accra,Accra,p2p,velocity,0,True,velocity
+TXN-002395,2026-08-12 10:38:12,AIR-00015,MTN-00067,219.26,Accra,Koforidua,p2p,velocity,0,True,velocity
+TXN-002396,2026-08-12 10:39:44,AIR-00015,TEL-00065,81.31,Accra,Tamale,p2p,velocity,0,True,velocity
+TXN-002488,2026-08-12 22:36:00,AIR-00045,TEL-00017,405.17,Cape Coast,Tamale,bank_to_wallet,,1,False,none
+TXN-002506,2026-08-13 00:39:29,TEL-00014,MTN-00064,254.1,Koforidua,Tamale,bank_to_wallet,,1,False,none
+TXN-002511,2026-08-13 01:16:00,MTN-00031,MTN-00043,25.73,Tamale,Ho,cash_in,,1,False,none
+TXN-002516,2026-08-13 02:10:02,AIR-00045,AIR-00027,80.94,Accra,Ho,bank_to_wallet,,1,False,none
+TXN-002523,2026-08-13 02:38:10,MTN-00073,TEL-00050,112.87,Takoradi,Accra,cash_in,,1,False,none
+TXN-002533,2026-08-13 03:30:59,MTN-00058,MTN-00064,13098.17,Takoradi,Tamale,p2p,amount_spike,1,True,amount_spike
+TXN-002545,2026-08-13 04:31:56,TEL-00041,MTN-00073,5.76,Kumasi,Takoradi,p2p,,1,False,none
+TXN-002562,2026-08-13 06:53:55,AIR-00018,TEL-00038,17.38,Kumasi,Kumasi,p2p,geo_impossible,0,True,geo_impossible
+TXN-002564,2026-08-13 07:05:55,AIR-00018,MTN-00049,64.81,Bolgatanga,Bolgatanga,p2p,geo_impossible,0,True,geo_impossible
+TXN-002649,2026-08-13 19:00:49,AIR-00072,MTN-00013,175.2,Takoradi,Kumasi,p2p,velocity,0,True,velocity
+TXN-002650,2026-08-13 19:01:31,AIR-00072,AIR-00024,217.21,Takoradi,Accra,p2p,velocity,0,True,velocity
+TXN-002651,2026-08-13 19:02:07,AIR-00072,TEL-00053,149.22,Takoradi,Kumasi,p2p,velocity,0,True,velocity
+TXN-002652,2026-08-13 19:02:13,AIR-00072,AIR-00054,172.82,Takoradi,Cape Coast,p2p,velocity,0,True,velocity
+TXN-002653,2026-08-13 19:03:04,AIR-00072,AIR-00078,198.92,Takoradi,Takoradi,p2p,velocity,0,True,velocity
+TXN-002654,2026-08-13 19:03:37,AIR-00072,TEL-00038,153.03,Takoradi,Kumasi,p2p,velocity,0,True,velocity
+TXN-002655,2026-08-13 19:04:59,AIR-00072,TEL-00011,196.87,Takoradi,Accra,p2p,velocity,0,True,velocity
+TXN-002656,2026-08-13 19:05:01,AIR-00072,MTN-00037,237.37,Takoradi,Takoradi,p2p,velocity,0,True,velocity
+TXN-002657,2026-08-13 19:05:13,AIR-00072,MTN-00064,166.57,Takoradi,Tamale,p2p,velocity,0,True,velocity
+TXN-002658,2026-08-13 19:05:50,AIR-00072,AIR-00072,137.71,Takoradi,Takoradi,p2p,velocity,0,True,velocity
+TXN-002659,2026-08-13 19:06:25,AIR-00072,TEL-00041,194.2,Takoradi,Kumasi,p2p,velocity,0,True,velocity
+TXN-002660,2026-08-13 19:06:49,AIR-00072,MTN-00046,119.88,Takoradi,Tamale,p2p,velocity,0,True,velocity
+TXN-002661,2026-08-13 19:07:34,AIR-00072,AIR-00009,86.79,Takoradi,Accra,p2p,velocity,0,True,velocity
+TXN-002706,2026-08-14 01:39:30,AIR-00048,MTN-00025,275.5,Koforidua,Accra,bank_to_wallet,,1,False,none
+TXN-002715,2026-08-14 02:59:28,TEL-00047,AIR-00066,63.76,Kumasi,Kumasi,bank_to_wallet,,1,False,none
+TXN-002803,2026-08-14 14:38:52,AIR-00030,MTN-00058,17335.16,Tamale,Takoradi,p2p,geo_impossible|amount_spike,1,True,amount_spike
+TXN-002811,2026-08-14 15:11:44,AIR-00030,MTN-00013,51.98,Sunyani,Kumasi,cash_in,geo_impossible,0,True,none
+TXN-002844,2026-08-14 19:39:26,AIR-00003,AIR-00024,8739.61,Takoradi,Accra,p2p,amount_spike,1,True,amount_spike
+TXN-002866,2026-08-14 21:34:39,MTN-00031,MTN-00061,256.73,Tamale,Koforidua,bank_to_wallet,,1,False,none
+TXN-002908,2026-08-15 03:05:29,TEL-00077,MTN-00043,128.69,Kumasi,Ho,bank_to_wallet,,1,False,none
+TXN-002912,2026-08-15 03:31:13,TEL-00062,AIR-00024,317.45,Accra,Accra,bank_to_wallet,,1,False,none
+TXN-002915,2026-08-15 03:58:16,TEL-00047,AIR-00003,201.37,Ho,Takoradi,bank_to_wallet,,1,False,none
+TXN-002937,2026-08-15 05:50:11,TEL-00077,AIR-00033,563.74,Kumasi,Kumasi,bank_to_wallet,,1,False,none
