@@ -106,3 +106,7 @@ Patched app, admin session:
 POST /login  ama.admin / lab-only-admin  ->  302 to /
 GET  /admin                              ->  200 staff directory
 ```
+
+## Contributors
+
+- [Richard Justice Doe](https://github.com/Richard-Justice-Doe) — author

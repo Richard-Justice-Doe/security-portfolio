@@ -24,3 +24,7 @@ Follow that folder's README for the exact demo commands.
 ## Ethical use
 
 These projects are **portfolio / teaching labs**. They use documentation-range IPs, fake wallets, and made-up email. Project 3 is labelled **VULNERABLE BY DESIGN — LAB USE ONLY, DO NOT DEPLOY PUBLICLY** and ships a patched twin; it is not a target for public scanning.
+
+## Contributors
+
+- [Richard Justice Doe](https://github.com/Richard-Justice-Doe) — author

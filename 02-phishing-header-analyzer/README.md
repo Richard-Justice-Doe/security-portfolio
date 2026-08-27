@@ -84,3 +84,7 @@ All three are synthetic. Documentation IPs (`192.0.2.0/24`, `203.0.113.0/24`) on
 ## Screenshot (what the results page shows)
 
 A dark analyst-style page: a large **risk score / 100** with a Low–Critical band, a table of extracted headers with colour-coded SPF/DKIM/DMARC pills, a list of red flags each with a severity chip and a short explanation, and the Received chain as a numbered hop list (newest first). The home page has a paste box, a file upload, and links to the three bundled `.eml` files.
+
+## Contributors
+
+- [Richard Justice Doe](https://github.com/Richard-Justice-Doe) — author

@@ -99,3 +99,7 @@ Each log line is one JSON object (`timestamp`, `alert_type`, `src_ip`, `dst_ip`,
 ## Limitations (honest)
 
 This is a teaching detector, not a product NIDS. It has no encrypted-payload inspection, no community threat intel, and a single static baseline (concept drift is out of scope). Thresholds live in `ntd/config.py` if you retrain on your own lab capture.
+
+## Contributors
+
+- [Richard Justice Doe](https://github.com/Richard-Justice-Doe) — author

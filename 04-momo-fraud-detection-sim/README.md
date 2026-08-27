@@ -75,3 +75,7 @@ CSV columns include `rule_flags` (`velocity`, `geo_impossible`, `amount_spike`, 
 ## Limitations
 
 Rules fire on the patterns they were written for; a patient mule who stays under six transfers per ten minutes will slip through. Isolation Forest contamination is a knob (`0.04`), not a learned fraud rate. There is no graph (circular mule rings) or SIM-swap signal in this version.
+
+## Contributors
+
+- [Richard Justice Doe](https://github.com/Richard-Justice-Doe) — author

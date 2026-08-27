@@ -82,3 +82,7 @@ A dark operations page with:
 ## Limitations
 
 Parsers are dialect-specific (sshd, UFW, nginx combined). Other syslog formats will be skipped. Rules are threshold heuristics, not UEBA.
+
+## Contributors
+
+- [Richard Justice Doe](https://github.com/Richard-Justice-Doe) — author
