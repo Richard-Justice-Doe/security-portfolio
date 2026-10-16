@@ -10,6 +10,7 @@ venv/
 **/logs/*.log
 **/logs/*.jsonl
 **/*.png
+**/reports/*.pdf
 !**/samples/**
 .pytest_cache/
 

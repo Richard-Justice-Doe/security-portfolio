@@ -13,6 +13,7 @@ A small office or homelab often has no SIEM. This tool answers: *after I have wa
 | `capture.py` | Sniff an interface or read a `.pcap` into SQLite |
 | `baseline.py` | Aggregate typical ports, destinations, packet size, per-host rates |
 | `detect.py` | Compare new traffic to the baseline; log alerts |
+| `report.py` | Render a PDF incident report from the alert log |
 | `generate_sample.py` | Rebuild the bundled synthetic PCAPs |
 | `samples/` | `baseline.pcap` (normal) and `anomalous.pcap` (scan + C2 + beacon) |
 | `ntd/` | Parsing, SQLite, heuristics, structured logging |
