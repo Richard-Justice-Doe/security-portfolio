@@ -16,7 +16,8 @@ import sys
 from pathlib import Path
 
 # Allow `python capture.py` from this directory.
-sys.path.insert(0, str(Path(__file__).resolve().parent))
+HERE = Path(__file__).resolve().parent
+sys.path.insert(0, str(HERE))
 
 from ntd.database import connect, insert_packets
 from ntd.packets import iter_packets
@@ -32,7 +33,7 @@ def parse_args() -> argparse.Namespace:
         "--interface",
         help="Live capture on this interface (requires admin/Npcap; only on networks you own)",
     )
-    parser.add_argument("--db", default="data/traffic.db", help="SQLite database path")
+    parser.add_argument("--db", default=str(HERE / "data/traffic.db"), help="SQLite database path")
     parser.add_argument(
         "--duration",
         type=float,

@@ -16,6 +16,9 @@ import numpy as np
 import pandas as pd
 from sklearn.ensemble import IsolationForest
 
+# Default paths resolve against this script's folder, not the working directory.
+HERE = Path(__file__).resolve().parent
+
 # Implied ground speed above this is treated as physically impossible
 # for a person holding a phone (cars, tro-tros, even domestic flights
 # plus airport time cannot justify Accra -> Tamale in ten minutes).
@@ -187,9 +190,9 @@ def console_summary(df: pd.DataFrame) -> str:
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Flag synthetic MoMo fraud patterns.")
-    parser.add_argument("--input", default="data/momo_transactions.csv")
-    parser.add_argument("--out-csv", default="reports/flagged_transactions.csv")
-    parser.add_argument("--out-chart", default="reports/flagged_over_time.png")
+    parser.add_argument("--input", default=str(HERE / "data/momo_transactions.csv"))
+    parser.add_argument("--out-csv", default=str(HERE / "reports/flagged_transactions.csv"))
+    parser.add_argument("--out-chart", default=str(HERE / "reports/flagged_over_time.png"))
     parser.add_argument("--no-ml", action="store_true", help="Skip Isolation Forest")
     args = parser.parse_args()
 

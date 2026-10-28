@@ -72,12 +72,18 @@ class Alert:
 
 
 class AlertLogger:
-    """Fan-out alerts to stdout and an append-only JSONL log."""
+    """Fan-out alerts to stdout and a JSONL log.
 
-    def __init__(self, log_path: str | Path | None = None) -> None:
+    By default the log is truncated so it holds only this run's alerts (what
+    report.py expects); pass append=True to keep earlier runs' alerts.
+    """
+
+    def __init__(self, log_path: str | Path | None = None, append: bool = False) -> None:
         self.log_path = Path(log_path) if log_path else None
         if self.log_path:
             self.log_path.parent.mkdir(parents=True, exist_ok=True)
+            if not append:
+                self.log_path.write_text("", encoding="utf-8")
 
     def emit(self, alert: Alert) -> None:
         line = alert.format_console()

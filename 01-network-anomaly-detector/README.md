@@ -38,7 +38,10 @@ python generate_sample.py
 python capture.py --pcap samples/baseline.pcap --db data/traffic.db
 python baseline.py --db data/traffic.db
 python detect.py --pcap samples/anomalous.pcap --db data/traffic.db --log logs/alerts.jsonl
+python report.py --log logs/alerts.jsonl --db data/traffic.db --out reports/report.pdf
 ```
+
+Each `detect.py` run starts a fresh alert log; add `--append` to keep alerts from earlier runs.
 
 Live capture on a network you own (not required for the demo):
 

@@ -17,7 +17,8 @@ import argparse
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
+HERE = Path(__file__).resolve().parent
+sys.path.insert(0, str(HERE))
 
 from ntd.builder import build_baseline
 from ntd.database import connect
@@ -25,7 +26,7 @@ from ntd.database import connect
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Compute a network baseline from captured packets.")
-    parser.add_argument("--db", default="data/traffic.db", help="SQLite database path")
+    parser.add_argument("--db", default=str(HERE / "data/traffic.db"), help="SQLite database path")
     return parser.parse_args()
 
 

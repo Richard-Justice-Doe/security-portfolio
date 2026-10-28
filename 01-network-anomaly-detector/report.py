@@ -22,7 +22,8 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
+HERE = Path(__file__).resolve().parent
+sys.path.insert(0, str(HERE))
 
 from ntd.database import connect, load_baseline
 
@@ -56,9 +57,9 @@ DETAIL_FIELDS = [
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Render a PDF report from a detector run.")
-    parser.add_argument("--log", default="logs/alerts.jsonl", help="JSONL alert log from detect.py")
-    parser.add_argument("--db", default="data/traffic.db", help="SQLite DB holding the baseline")
-    parser.add_argument("--out", default="reports/report.pdf", help="Output PDF path")
+    parser.add_argument("--log", default=str(HERE / "logs/alerts.jsonl"), help="JSONL alert log from detect.py")
+    parser.add_argument("--db", default=str(HERE / "data/traffic.db"), help="SQLite DB holding the baseline")
+    parser.add_argument("--out", default=str(HERE / "reports/report.pdf"), help="Output PDF path")
     parser.add_argument("--title", default="Network Anomaly Report", help="Report title")
     return parser.parse_args()
 

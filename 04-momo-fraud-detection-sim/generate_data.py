@@ -16,6 +16,9 @@ from pathlib import Path
 
 import pandas as pd
 
+# Default paths resolve against this script's folder, not the working directory.
+HERE = Path(__file__).resolve().parent
+
 CITIES: dict[str, tuple[float, float]] = {
     "Accra": (5.6037, -0.1870),
     "Kumasi": (6.6885, -1.6244),
@@ -234,7 +237,7 @@ def generate(n_accounts: int = 80, n_normal: int = 2800, seed: int = 7) -> pd.Da
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Generate a synthetic Ghana MoMo transaction CSV.")
-    parser.add_argument("--out", default="data/momo_transactions.csv")
+    parser.add_argument("--out", default=str(HERE / "data/momo_transactions.csv"))
     parser.add_argument("--accounts", type=int, default=80)
     parser.add_argument("--normal", type=int, default=2800)
     parser.add_argument("--seed", type=int, default=7)

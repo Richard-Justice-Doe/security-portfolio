@@ -16,7 +16,8 @@ import argparse
 import sys
 from pathlib import Path
 
-sys.path.insert(0, str(Path(__file__).resolve().parent))
+HERE = Path(__file__).resolve().parent
+sys.path.insert(0, str(HERE))
 
 from ntd.alerts import AlertLogger
 from ntd.database import connect, load_baseline
@@ -29,8 +30,13 @@ def parse_args() -> argparse.Namespace:
     source = parser.add_mutually_exclusive_group(required=True)
     source.add_argument("--pcap", help="Offline PCAP to analyse (recommended demo mode)")
     source.add_argument("--interface", help="Live capture interface (networks you own only)")
-    parser.add_argument("--db", default="data/traffic.db", help="SQLite DB that holds the baseline")
-    parser.add_argument("--log", default="logs/alerts.jsonl", help="JSONL alert log path")
+    parser.add_argument("--db", default=str(HERE / "data/traffic.db"), help="SQLite DB that holds the baseline")
+    parser.add_argument("--log", default=str(HERE / "logs/alerts.jsonl"), help="JSONL alert log path")
+    parser.add_argument(
+        "--append",
+        action="store_true",
+        help="Add to the existing alert log instead of starting a fresh one for this run",
+    )
     parser.add_argument(
         "--duration",
         type=float,
@@ -42,7 +48,7 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> int:
     args = parse_args()
-    logger = AlertLogger(args.log)
+    logger = AlertLogger(args.log, append=args.append)
 
     conn = connect(args.db)
     try:
